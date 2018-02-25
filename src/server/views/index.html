@@ -1,12 +1,24 @@
 {{#contentFor 'customCSS'}}
 <link rel="stylesheet" type="text/css" href="build/home-style.css">
-<link rel="stylesheet" type="text/css" href="build/vendor-style.css">
-{{/contentFor}}
-
-
-{{> loader}}
+<link rel="stylesheet" type="text/css" href="build/vendor-style.css"> {{/contentFor}} {{> loader}}
 <div id="app-body" class="app-body"></div>
 <div id="map"></div>
+<!-- <div id="auth">
+  <a href="#" id="sign-in">Sign In</a>
+</div> -->
+<div class="form-container" id="authPane">
+  <form id="securedServicesForm">
+    <div class="form-component">
+      <label for="username">User Name</label>
+      <input type="text" id="username" />
+    </div>
+    <div class="form-component">
+      <label for="password">Password </label>
+      <input type="password" id="password">
+    </div>
+    <button id="formSubmit" type="submit">Access Secure Services</button>
+  </form>
+</div>
 <a href='#' id='exportButton' title='Download Drawing' download></a>
 <!-- <div class="push"></div> -->
 
